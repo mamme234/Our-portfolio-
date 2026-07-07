@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title>Grade 11-A · Class Portfolio</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Google Font: Inter + EB Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+
+        <!-- ===== HERO ===== -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Grade 11-A <span class="badge-hero">Portfolio</span></h1>
+                    <div class="hero-meta">
+                        <span><i class="fas fa-school"></i> St. Jude High School</span>
+                        <span><i class="fas fa-users"></i> 11-A · STEM</span>
+                        <span class="motto"><i class="fas fa-quote-left"></i> "Together we excel"</span>
+                    </div>
+                    <div class="hero-info">
+                        <span><i class="fas fa-calendar-alt"></i> SY 2025-2026</span>
+                        <span><i class="fas fa-user-tie"></i> Mrs. Rivera</span>
+                        <span><i class="fas fa-check-circle" style="color:#6b8cff;"></i> Foundation · Process · Polish</span>
+                    </div>
+                </div>
+                <div class="class-photo"></div>
+            </div>
+        </section>
+
+        <!-- ===== STATS ===== -->
+        <div class="stats-grid">
+            <div class="stat-card"><div class="stat-number" id="totalStudents">0</div><div>Students</div></div>
+            <div class="stat-card"><div class="stat-number" id="boysCount">0</div><div>Boys</div></div>
+            <div class="stat-card"><div class="stat-number" id="girlsCount">0</div><div>Girls</div></div>
+            <div class="stat-card"><div class="stat-number" id="awardsCount">0</div><div>Awards</div></div>
+            <div class="stat-card"><div class="stat-number" id="projectsCount">0</div><div>Projects</div></div>
+        </div>
+
+        <!-- ===== STUDENTS ===== -->
+        <div class="section-title">
+            <i class="fas fa-user-graduate"></i> Students
+            <span class="checklist-badge"><i class="fas fa-check"></i> 4 projects · case study</span>
+        </div>
+        <div class="search-filter">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="studentSearch" placeholder="Search by name..." />
+            </div>
+            <div class="filter-group">
+                <span class="filter-btn active" data-filter="all">All</span>
+                <span class="filter-btn" data-filter="boy">Boys</span>
+                <span class="filter-btn" data-filter="girl">Girls</span>
+                <span class="filter-btn" data-filter="sectionA">Section A</span>
+            </div>
+        </div>
+        <div class="student-grid" id="studentGrid"></div>
+
+        <!-- ===== TEACHERS ===== -->
+        <div class="section-title"><i class="fas fa-chalkboard-teacher"></i> Teachers</div>
+        <div class="teacher-list">
+            <div class="teacher-item"><i class="fas fa-user-circle"></i> Mrs. Rivera · Math</div>
+            <div class="teacher-item"><i class="fas fa-user-circle"></i> Mr. Cruz · Physics</div>
+            <div class="teacher-item"><i class="fas fa-user-circle"></i> Ms. Tan · English</div>
+            <div class="teacher-item"><i class="fas fa-user-circle"></i> Dr. Reyes · Chemistry</div>
+        </div>
+
+        <!-- ===== GALLERY ===== -->
+        <div class="section-title"><i class="fas fa-images"></i> Gallery</div>
+        <div class="gallery-grid">
+            <div class="gallery-item">🏆 Sports</div>
+            <div class="gallery-item">🎓 Grad</div>
+            <div class="gallery-item">📚 Events</div>
+            <div class="gallery-item">🚌 Trips</div>
+            <div class="gallery-item">🏅 Comp</div>
+        </div>
+
+        <!-- ===== DOWNLOADS ===== -->
+        <div class="section-title"><i class="fas fa-download"></i> Downloads</div>
+        <div class="download-links">
+            <a href="#" class="download-btn"><i class="fas fa-calendar"></i> Timetable</a>
+            <a href="#" class="download-btn"><i class="fas fa-sticky-note"></i> Notes</a>
+            <a href="#" class="download-btn"><i class="fas fa-file-pdf"></i> Documents</a>
+            <a href="#" class="download-btn" id="printResumeBtn"><i class="fas fa-print"></i> Printable resume</a>
+            <a href="#" class="download-btn" id="pdfDownloadBtn"><i class="fas fa-file-pdf"></i> PDF Download</a>
+        </div>
+
+        <!-- ===== CONTACT ===== -->
+        <div class="section-title"><i class="fas fa-envelope"></i> Contact</div>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <p><i class="fas fa-phone-alt"></i> +63 912 3456 789</p>
+                <p><i class="fas fa-envelope"></i> 11A@stjude.edu</p>
+                <p><i class="fab fa-linkedin"></i> /in/grade11a</p>
+                <p><strong>Class Rep:</strong> Maria Santos</p>
+            </div>
+            <div class="contact-form">
+                <input type="text" placeholder="Your name" />
+                <input type="email" placeholder="Email" />
+                <textarea rows="2" placeholder="Message"></textarea>
+                <button>Send</button>
+            </div>
+        </div>
+
+        <!-- ===== FOOTER ===== -->
+        <div class="footer-badges">
+            <span><i class="fas fa-check-circle" style="color:#6b8cff;"></i> Foundation: 4 projects · case study</span>
+            <span><i class="fas fa-check-circle" style="color:#6b8cff;"></i> Process: sketches · user research</span>
+            <span><i class="fas fa-check-circle" style="color:#6b8cff;"></i> Visual: mockups · typography</span>
+            <span><i class="fas fa-check-circle" style="color:#6b8cff;"></i> Personal: headshot · elevator pitch</span>
+            <span><i class="fas fa-check-circle" style="color:#6b8cff;"></i> Tech: custom domain · responsive</span>
+        </div>
+        <div class="footer-premium">
+            <i class="fas fa-video"></i> Video walkthrough ·
+            <i class="fas fa-quote-right"></i> Testimonial ·
+            <i class="fas fa-chart-line"></i> Analytics ·
+            <i class="fas fa-robot"></i> AI bio generator
+        </div>
+    </div>
+
+    <!-- ===== PROFILE MODAL ===== -->
+    <div class="profile-modal" id="profileModal">
+        <div class="profile-panel" id="profilePanel">
+            <span class="close" id="closeModal">&times;</span>
+            <div id="profileContent"></div>
+        </div>
+    </div>
+
+    <!-- ===== ADMIN TOGGLE (Dark/Light) ===== -->
+    <div class="admin-toggle" id="adminToggle"><i class="fas fa-cog"></i> Admin</div>
+
+    <!-- ===== GLASS BUTTON ===== -->
+    <div style="text-align: center; margin: 2rem 0;">
+        <button class="btn-glass" onclick="alert('✨ Glass button clicked!')">
+            <i class="fas fa-star"></i> ✨ Glass
+        </button>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
