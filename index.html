@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <meta name="description" content="Grade 11-A Class Portfolio - St. Jude High School" />
     <title>Grade 11-A · Class Portfolio</title>
+
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <!-- Google Font: Inter + EB Garamond -->
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
-    <!-- Main Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
+
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
     <div class="container">
 
-        <!-- ===== HERO ===== -->
+        <!-- ============================================================
+        HERO
+        ============================================================ -->
         <section class="hero">
             <div class="hero-bg"></div>
             <div class="hero-content">
@@ -30,123 +39,218 @@
                     <div class="hero-info">
                         <span><i class="fas fa-calendar-alt"></i> SY 2025-2026</span>
                         <span><i class="fas fa-user-tie"></i> Mrs. Rivera</span>
-                        <span><i class="fas fa-check-circle" style="color:#6b8cff;"></i> Foundation · Process · Polish</span>
                     </div>
                 </div>
-                <div class="class-photo"></div>
+                <div class="hero-visual">
+                    <div class="profile-avatar glass">
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-inner">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="robotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#6b8cff" />
+                                        <stop offset="100%" stop-color="#a855f7" />
+                                    </linearGradient>
+                                </defs>
+                                <rect x="50" y="40" width="100" height="90" rx="25" fill="url(#robotGrad)" opacity="0.9" />
+                                <circle cx="80" cy="75" r="12" fill="white" />
+                                <circle cx="120" cy="75" r="12" fill="white" />
+                                <circle cx="83" cy="75" r="6" fill="#0b0f1a" />
+                                <circle cx="123" cy="75" r="6" fill="#0b0f1a" />
+                                <rect x="80" y="100" width="40" height="8" rx="4" fill="white" opacity="0.7" />
+                                <rect x="95" y="20" width="10" height="20" rx="3" fill="#6b8cff" />
+                                <circle cx="100" cy="18" r="8" fill="#a855f7" />
+                                <rect x="55" y="135" width="90" height="45" rx="15" fill="#6b8cff" opacity="0.7" />
+                                <rect x="30" y="140" width="20" height="35" rx="8" fill="#6b8cff" opacity="0.6" />
+                                <rect x="150" y="140" width="20" height="35" rx="8" fill="#6b8cff" opacity="0.6" />
+                                <rect x="85" y="170" width="30" height="6" rx="3" fill="white" opacity="0.6" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="floating-tag tag-1 glass"><i class="fas fa-flask"></i> STEM</div>
+                    <div class="floating-tag tag-2 glass"><i class="fas fa-robot"></i> AI/ML</div>
+                    <div class="floating-tag tag-3 glass"><i class="fas fa-code"></i> Coding</div>
+                </div>
             </div>
         </section>
 
-        <!-- ===== STATS ===== -->
+        <!-- ============================================================
+        STATS
+        ============================================================ -->
         <div class="stats-grid">
-            <div class="stat-card"><div class="stat-number" id="totalStudents">0</div><div>Students</div></div>
-            <div class="stat-card"><div class="stat-number" id="boysCount">0</div><div>Boys</div></div>
-            <div class="stat-card"><div class="stat-number" id="girlsCount">0</div><div>Girls</div></div>
-            <div class="stat-card"><div class="stat-number" id="awardsCount">0</div><div>Awards</div></div>
-            <div class="stat-card"><div class="stat-number" id="projectsCount">0</div><div>Projects</div></div>
+            <div class="stat-card glass">
+                <div class="stat-number" id="totalStudents">0</div>
+                <div class="stat-label"><i class="fas fa-user-graduate"></i> Students</div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-number" id="totalMen">0</div>
+                <div class="stat-label"><i class="fas fa-mars"></i> Total Men</div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-number" id="awardsCount">0</div>
+                <div class="stat-label"><i class="fas fa-trophy"></i> Awards</div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-number" id="projectsCount">0</div>
+                <div class="stat-label"><i class="fas fa-project-diagram"></i> Projects</div>
+            </div>
         </div>
 
-        <!-- ===== STUDENTS ===== -->
-        <div class="section-title">
-            <i class="fas fa-user-graduate"></i> Students
-            <span class="checklist-badge"><i class="fas fa-check"></i> 4 projects · case study</span>
+        <!-- ============================================================
+        ABOUT THE CLASS
+        ============================================================ -->
+        <div class="section-title"><i class="fas fa-info-circle"></i> About the Class</div>
+        <div class="about-class glass">
+            <div class="about-grid">
+                <div class="about-item">
+                    <i class="fas fa-users"></i>
+                    <h4>8 Students</h4>
+                    <p>All Men · One Family</p>
+                </div>
+                <div class="about-item">
+                    <i class="fas fa-user-tie"></i>
+                    <h4>Class Adviser</h4>
+                    <p>Mrs. Rivera</p>
+                </div>
+                <div class="about-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h4>School Year</h4>
+                    <p>2025-2026</p>
+                </div>
+                <div class="about-item">
+                    <i class="fas fa-bullseye"></i>
+                    <h4>Vision</h4>
+                    <p>Innovators &amp; Leaders in STEM</p>
+                </div>
+            </div>
         </div>
+
+        <!-- ============================================================
+        STUDENTS
+        ============================================================ -->
+        <div class="section-title"><i class="fas fa-user-graduate"></i> Students</div>
+
         <div class="search-filter">
-            <div class="search-box">
+            <div class="search-box glass">
                 <i class="fas fa-search"></i>
-                <input type="text" id="studentSearch" placeholder="Search by name..." />
+                <input type="text" id="studentSearch" placeholder="Search by name or nickname..." />
             </div>
             <div class="filter-group">
                 <span class="filter-btn active" data-filter="all">All</span>
-                <span class="filter-btn" data-filter="boy">Boys</span>
-                <span class="filter-btn" data-filter="girl">Girls</span>
-                <span class="filter-btn" data-filter="sectionA">Section A</span>
+                <span class="filter-btn" data-filter="Men">Men</span>
             </div>
         </div>
+
         <div class="student-grid" id="studentGrid"></div>
 
-        <!-- ===== TEACHERS ===== -->
-        <div class="section-title"><i class="fas fa-chalkboard-teacher"></i> Teachers</div>
-        <div class="teacher-list">
-            <div class="teacher-item"><i class="fas fa-user-circle"></i> Mrs. Rivera · Math</div>
-            <div class="teacher-item"><i class="fas fa-user-circle"></i> Mr. Cruz · Physics</div>
-            <div class="teacher-item"><i class="fas fa-user-circle"></i> Ms. Tan · English</div>
-            <div class="teacher-item"><i class="fas fa-user-circle"></i> Dr. Reyes · Chemistry</div>
-        </div>
-
-        <!-- ===== GALLERY ===== -->
+        <!-- ============================================================
+        GALLERY
+        ============================================================ -->
         <div class="section-title"><i class="fas fa-images"></i> Gallery</div>
         <div class="gallery-grid">
-            <div class="gallery-item">🏆 Sports</div>
-            <div class="gallery-item">🎓 Grad</div>
-            <div class="gallery-item">📚 Events</div>
-            <div class="gallery-item">🚌 Trips</div>
-            <div class="gallery-item">🏅 Comp</div>
+            <div class="gallery-item glass">🏆 Sports Day</div>
+            <div class="gallery-item glass">🎓 Graduation</div>
+            <div class="gallery-item glass">📚 Class Events</div>
+            <div class="gallery-item glass">🚌 Trips</div>
+            <div class="gallery-item glass">🏅 Competitions</div>
+            <div class="gallery-item glass">🎭 School Play</div>
         </div>
 
-        <!-- ===== DOWNLOADS ===== -->
+        <!-- ============================================================
+        ACHIEVEMENTS
+        ============================================================ -->
+        <div class="section-title"><i class="fas fa-medal"></i> Achievements</div>
+        <div class="achievement-grid">
+            <div class="achievement-card glass">
+                <i class="fas fa-award"></i>
+                <h4>Academic Awards</h4>
+                <p>Math Olympiad · Science Fair Champions</p>
+            </div>
+            <div class="achievement-card glass">
+                <i class="fas fa-football-ball"></i>
+                <h4>Sports Awards</h4>
+                <p>Intramurals Champions</p>
+            </div>
+            <div class="achievement-card glass">
+                <i class="fas fa-code"></i>
+                <h4>Club Achievements</h4>
+                <p>Robotics Club · Debate Team</p>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        DOWNLOADS
+        ============================================================ -->
         <div class="section-title"><i class="fas fa-download"></i> Downloads</div>
         <div class="download-links">
-            <a href="#" class="download-btn"><i class="fas fa-calendar"></i> Timetable</a>
-            <a href="#" class="download-btn"><i class="fas fa-sticky-note"></i> Notes</a>
-            <a href="#" class="download-btn"><i class="fas fa-file-pdf"></i> Documents</a>
-            <a href="#" class="download-btn" id="printResumeBtn"><i class="fas fa-print"></i> Printable resume</a>
-            <a href="#" class="download-btn" id="pdfDownloadBtn"><i class="fas fa-file-pdf"></i> PDF Download</a>
+            <a href="#" class="download-btn glass"><i class="fas fa-calendar"></i> Timetable</a>
+            <a href="#" class="download-btn glass"><i class="fas fa-sticky-note"></i> Notes</a>
+            <a href="#" class="download-btn glass"><i class="fas fa-file-pdf"></i> Documents</a>
+            <a href="#" class="download-btn glass"><i class="fas fa-print"></i> Printable</a>
         </div>
 
-        <!-- ===== CONTACT ===== -->
+        <!-- ============================================================
+        CONTACT
+        ============================================================ -->
         <div class="section-title"><i class="fas fa-envelope"></i> Contact</div>
         <div class="contact-wrapper">
-            <div class="contact-info">
+            <div class="contact-info glass">
                 <p><i class="fas fa-phone-alt"></i> +63 912 3456 789</p>
                 <p><i class="fas fa-envelope"></i> 11A@stjude.edu</p>
-                <p><i class="fab fa-linkedin"></i> /in/grade11a</p>
-                <p><strong>Class Rep:</strong> Maria Santos</p>
+                <p><strong>Class Rep:</strong> Muhammad Ilyas</p>
+                <p><strong>Adviser:</strong> Mrs. Rivera</p>
             </div>
-            <div class="contact-form">
+            <div class="contact-form glass">
                 <input type="text" placeholder="Your name" />
-                <input type="email" placeholder="Email" />
-                <textarea rows="2" placeholder="Message"></textarea>
-                <button>Send</button>
+                <input type="email" placeholder="Your email" />
+                <textarea rows="3" placeholder="Your message..."></textarea>
+                <button class="btn-primary"><i class="fas fa-paper-plane"></i> Send</button>
             </div>
         </div>
 
-        <!-- ===== FOOTER ===== -->
+        <!-- ============================================================
+        FOOTER
+        ============================================================ -->
         <div class="footer-badges">
-            <span><i class="fas fa-check-circle" style="color:#6b8cff;"></i> Foundation: 4 projects · case study</span>
-            <span><i class="fas fa-check-circle" style="color:#6b8cff;"></i> Process: sketches · user research</span>
-            <span><i class="fas fa-check-circle" style="color:#6b8cff;"></i> Visual: mockups · typography</span>
-            <span><i class="fas fa-check-circle" style="color:#6b8cff;"></i> Personal: headshot · elevator pitch</span>
-            <span><i class="fas fa-check-circle" style="color:#6b8cff;"></i> Tech: custom domain · responsive</span>
+            <span><i class="fas fa-check-circle"></i> Foundation: 4 projects</span>
+            <span><i class="fas fa-check-circle"></i> Process: sketches</span>
+            <span><i class="fas fa-check-circle"></i> Visual: mockups</span>
+            <span><i class="fas fa-check-circle"></i> Tech: responsive</span>
         </div>
         <div class="footer-premium">
-            <i class="fas fa-video"></i> Video walkthrough ·
-            <i class="fas fa-quote-right"></i> Testimonial ·
-            <i class="fas fa-chart-line"></i> Analytics ·
-            <i class="fas fa-robot"></i> AI bio generator
+            <i class="fas fa-video"></i> Walkthrough ·
+            <i class="fas fa-robot"></i> AI Bio ·
+            <i class="fas fa-globe"></i> Custom Domain ·
+            <i class="fas fa-mobile-alt"></i> PWA
         </div>
+        <div class="footer-copy">
+            &copy; 2025 Grade 11-A · Made with <i class="fas fa-heart" style="color:#ff6b6b;"></i>
+        </div>
+
     </div>
 
-    <!-- ===== PROFILE MODAL ===== -->
+    <!-- ============================================================
+    PROFILE MODAL (profile/ routing style)
+    ============================================================ -->
     <div class="profile-modal" id="profileModal">
-        <div class="profile-panel" id="profilePanel">
+        <div class="profile-panel glass" id="profilePanel">
             <span class="close" id="closeModal">&times;</span>
             <div id="profileContent"></div>
         </div>
     </div>
 
-    <!-- ===== ADMIN TOGGLE (Dark/Light) ===== -->
-    <div class="admin-toggle" id="adminToggle"><i class="fas fa-cog"></i> Admin</div>
+    <!-- ============================================================
+    THEME TOGGLE
+    ============================================================ -->
+    <button class="theme-toggle-fab" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
 
-    <!-- ===== GLASS BUTTON ===== -->
-    <div style="text-align: center; margin: 2rem 0;">
-        <button class="btn-glass" onclick="alert('✨ Glass button clicked!')">
-            <i class="fas fa-star"></i> ✨ Glass
-        </button>
-    </div>
-
-    <!-- ===== SCRIPTS ===== -->
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
     <script src="data.js"></script>
     <script src="script.js"></script>
+
 </body>
-</html>
+                                    </html>
